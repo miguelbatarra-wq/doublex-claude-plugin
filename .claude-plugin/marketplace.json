@@ -15,10 +15,8 @@
       },
       "category": "productivity",
       "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/miguelbatarra-wq/doublex-claude-plugin.git",
-        "path": "plugins/doublex",
-        "ref": "main"
+        "source": "url",
+        "url": "https://github.com/miguelbatarra-wq/doublex-claude-plugin.git"
       }
     }
   ]
