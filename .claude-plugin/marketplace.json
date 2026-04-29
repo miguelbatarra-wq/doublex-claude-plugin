@@ -1,0 +1,25 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "doublex",
+  "description": "DoubleX Claude Code Plugin — manage AI agents and flows directly from Claude Code",
+  "owner": {
+    "name": "DoubleX",
+    "email": "contact@doublex.ai"
+  },
+  "plugins": [
+    {
+      "name": "doublex",
+      "description": "Manage DoubleX AI agents and multi-agent flows directly from Claude Code",
+      "author": {
+        "name": "DoubleX"
+      },
+      "category": "productivity",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/miguelbatarra-wq/doublex-claude-plugin.git",
+        "path": ".",
+        "ref": "main"
+      }
+    }
+  ]
+}
