@@ -15,8 +15,6 @@ This plugin connects Claude Code to the DoubleX platform via a remote MCP server
 
 ## Installation
 
-### One-command install
-
 Inside Claude Code, run:
 
 ```
@@ -30,25 +28,6 @@ Then configure your API key:
 ```
 /doublex:setup
 ```
-
-### Manual installation
-
-**Step 1 — Register the MCP server**
-
-```bash
-claude mcp add --transport http doublex https://agent.doublex.ai/mcp
-```
-
-**Step 2 — Install the skill commands globally**
-
-```bash
-git clone https://github.com/miguelbatarra-wq/doublex-claude-plugin
-cp -r doublex-claude-plugin/commands/doublex ~/.claude/commands/doublex
-```
-
-**Step 3 — Configure your API key**
-
-Open Claude Code and run `/doublex:setup`. Follow the instructions to paste your API key — it will be stored as `DOUBLEX_API_KEY` in your shell profile.
 
 ---
 
@@ -92,6 +71,6 @@ The MCP server is hosted by DoubleX — no local server required.
 
 ## Authentication
 
-All requests use `Authorization: Bearer dxp_...` read from the `DOUBLEX_API_KEY` environment variable.
+All requests use `Authorization: Bearer dxp_...` read from the `DOUBLEX_API_KEY` environment variable set during `/doublex:setup`.
 
 Generate or revoke keys at **app.doublex.ai → Settings → API Keys**.
