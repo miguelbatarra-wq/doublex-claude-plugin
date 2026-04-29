@@ -15,19 +15,25 @@ This plugin connects Claude Code to the DoubleX platform via a remote MCP server
 
 ## Installation
 
-Inside Claude Code, run:
+**Step 1 — Add the DoubleX marketplace**
 
 ```
-/plugin install miguelbatarra-wq/doublex-claude-plugin
+/plugin marketplace add miguelbatarra-wq/doublex-claude-plugin
 ```
 
-This automatically registers the MCP server and installs all commands.
+**Step 2 — Install the plugin**
 
-Then configure your API key:
+```
+/plugin install doublex@doublex
+```
+
+**Step 3 — Configure your API key**
 
 ```
 /doublex:setup
 ```
+
+Follow the instructions to paste your API key. Done.
 
 ---
 
