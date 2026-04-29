@@ -17,7 +17,7 @@
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/miguelbatarra-wq/doublex-claude-plugin.git",
-        "path": ".",
+        "path": "plugins/doublex",
         "ref": "main"
       }
     }
