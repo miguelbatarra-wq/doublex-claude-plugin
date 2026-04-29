@@ -1,0 +1,9 @@
+{
+  "name": "doublex",
+  "version": "1.0.0",
+  "description": "Manage DoubleX AI agents and multi-agent flows directly from Claude Code",
+  "author": {
+    "name": "DoubleX",
+    "email": "contact@doublex.ai"
+  }
+}
