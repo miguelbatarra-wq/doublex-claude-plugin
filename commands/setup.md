@@ -8,25 +8,19 @@ Siga estes passos em ordem:
 3. Peça que o usuário cole o token aqui.
 4. Após receber o token (substitua dxp_TOKEN_AQUI pelo token recebido):
 
-   Adicionar ao perfil permanentemente (Mac/Linux):
+   Adicionar ao perfil do shell permanentemente (Mac/Linux):
    !echo 'export DOUBLEX_API_KEY="dxp_TOKEN_AQUI"' >> ~/.zshrc
 
    Ativar na sessão atual:
    !export DOUBLEX_API_KEY="dxp_TOKEN_AQUI"
 
-   Registrar o MCP server no Claude Code com o token (use a skill update-config):
-   Adicione ao settings.json em mcpServers:
+   Registrar a variável de ambiente no Claude Code via update-config skill:
+   Adicione ao settings.json sob a chave "env":
    {
-     "doublex": {
-       "type": "http",
-       "url": "https://agent.doublex.ai/mcp",
-       "headers": {
-         "Authorization": "Bearer dxp_TOKEN_AQUI"
-       }
-     }
+     "DOUBLEX_API_KEY": "dxp_TOKEN_AQUI"
    }
 
-5. Rode /reload-plugins para o MCP server carregar com o token configurado.
+5. Rode /reload-plugins para o MCP server carregar com o token.
 
 6. Informe ao usuário:
    "Plugin configurado com sucesso! Você já pode usar todos os comandos /doublex:*."
